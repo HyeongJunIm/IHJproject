@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#wrap{
+    position: relative;
+    width: 100%;
+    
+
+}
+#header{
+    height: 140px;
+    position: relative;
+  
+}
+#header .top-area{
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;   
+}
+#header .top-area::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#header .logo-area{
+    display: flex;
+    width: 1000px;
+    position: absolute;
+    top : 48px;
+    left: 0;
+    z-index: 30;
+   
+}
+#header .logo-main{
+    display: inline-block;
+}
+a{
+    border: none;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    vertical-align: top;
+   }
+#header .logo-sub{
+    display: inline-block;
+    position: relative;
+    top: 35px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #00458d;
+    line-height: 1;
+    vertical-align: top
+}
+form{
+    margin:30px 50px;
+    width: 500px;
+    height: 40px;}
+#input01{width: 400px;
+        height: 30px;} 
+#input02{
+    position: relative;
+    top: 5px;
+    height: 20px;
+    background-size: cover;
+    }
+#header .top-menu{
+    position: relative;
+    list-style-type: none;
+    float: right;
+    height: 69px;
+    padding-top: 30px
+}
+#header .top-menu >li{
+    position: relative;
+    float: left;
+    padding: 0 20px;
+}
+#header .top-menu >li:last-child{
+    padding-right: 0;
+}
+#header .top-menu >li:last-child>a{
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #00458d;
+}
+#wrap .inner{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#wrap .inner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#header .nav{
+    position: relative;
+    background-color: black;
+    top : -30px;
+}
+#header .nav-ul{
+    float: right;
+    padding-right: 50px;
+    list-style-type: none;
+    
+}
+#header .nav-ul>li{
+    float: left;
+    padding: 0 15px;    
+}
+#header .nav .nav-ul>li>a{
+    display: block;
+    position: relative;
+    height: 45px;
+    padding-top: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+}
+.home{
+    color: #0089ff;
+    background: url(https://www.ksponco.or.kr/online/images/common/icon_home.gif)
+    no-repeat center top;
+}
+.cart{background: url(https://www.ksponco.or.kr/online/images/common/icon_cart.gif)
+    no-repeat center top;}
+.mypage{
+    background: url(https://www.ksponco.or.kr/online/images/common/icon_member.gif)
+    no-repeat center top;
+}
+ .pc-allmenu{
+    display: block;
+    position: absolute;
+    left:1170px;
+    top :5px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+.pc{
+        display: block;
+        margin-top: 5px ;
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        color: transparent;
+    }
+
+    
+.pc::before,.pc::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height:3px;
+    background-color: black
+}
+.pc::before{
+    top : 15px
+}
+.pc::after{
+    top : 26px  
+}
+#contanier{
+    padding:0 0 50px 0;
+} 
+.section-visual-area{
+    height: 529px;
+    background: url(https://www.ksponco.or.kr/online/images/content/bg_tennis_pc.jpg)
+    no-repeat center top;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+.section-visual-area .inner{
+    height: 100%;
+}
+.main .section-visual-area .inner-text{
+    padding-top: 192px;
+}
+.section-visual-area .inner-text{
+    padding: 152px 0 25px;
+    font-size: 22px;
+    color: white;
+    line-height: 1;
+    text-align: left;
+}
+.stress{
+    display: block;
+    margin-top: 17px;
+    font-size: 72px;
+}
+.section-visual-area .picture-area{
+    position: absolute;
+    top : 92px;
+    right: 0;
+    z-index: 40;
+    width: 250px;
+    height: 270px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.picture-area .us{
+    display: block;
+    height: 190px;
+    margin: 10px;
+}
+.us-text{
+    border: none;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.us-text2{
+    text-align: center;
+    border: none;
+   font-size: 20px;
+   margin: 1px;
+   color: white;
+}
+.section-menu-area{
+    background-color: #0189ff;
+    height: 100px;
+}
+.section-menu-area .menu-ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0 auto;
+}
+.section-menu-area .menu-ul>li{
+    display: table-cell;
+    width: 240px;
+    text-align: center;
+}
+.section-menu-area .menu-ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 20px;
+    color: #cce1ff;
+    text-align: center;
+    line-height: 90px
+}
+    
+#content{
+    position: relative;
+    margin: 0 auto;
+}
+.main #content{
+    max-width: 100%;
+}
+.section-left-info{
+    border: 1px solid black;
+    padding: 100px 0;
+}
+.section-left-info .left-info{
+    position: relative;
+    width: 40%;
+    border: 1px solid black;
+    float: left;
+    height: 444px;
+    padding: 46px 0 0 50px;
+    background-color: rgba(169,228,207,1);
+}
+.left-info .info-text{
+    font-size: 36px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.2;
+}
+strong{
+    font-weight: 700;
+}
+.left-info .btn-app{
+    display: block;
+    position: relative;
+    width: 180px;
+    height: 70px;
+    margin-top: 150px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #303037;
+    line-height: 70px;
+    border: 2px solid #303037;
+   
+}
+.left-info .btn-app::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45%;
+    right: 40px;
+    width: 40px;
+    height: 14px;
+    margin-top: -7px;
+    background: url(https://www.ksponco.or.kr/online/images/content/icon_arrow01.png) no-repeat 0 0;
+}
+.left-info .bg_img{
+    position: absolute;
+    top : 150px;
+    right: 0px;
+    width: auto;
+    height: 419px;
+}
+.section-left-info .right-top-info, .section-left-info .right-bottom-info{
+    float: right;
+    height: 180px;
+    padding: 50px 0 0 40px; 
+}
+.right-top-info{
+    position: relative;
+    width: 49%;
+    top : 0px;
+    margin-bottom: 24px;
+    border: 1px solid #e5e8ed;
+}
+.tit_type01{
+    padding-bottom: 28px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1
+}
+.right-top-ul{
+    list-style-type: none;
+}
+li{
+    font-size: 18px;
+    color: #222;
+    list-style-type: none;
+    margin: 5px;
+}
+
+.right-top-info .con-more{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 43px;
+    padding-right: 16px;
+    font-size: 16px;
+    line-height: 1
+}
+.right-top-info .con-more::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 35%;
+    right: 3px;
+    width: 8px;
+    height: 8px;
+    margin-top: -3px;
+    background: url(https://www.ksponco.or.kr/online/images/content/icon_more02.png)
+    no-repeat 0 0;
+} 
+.right-bottom-info{
+    background-color: #eff3f6;
+    position: relative;
+    width: 49%;
+}
+.right-bottom-info .tit-type01{
+    padding-bottom: 28px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+.right-bottom-info .txt{
+    font-size: 18px;
+    color: #222;
+}
+.right-bottom-info .txt strong{
+    display: inline-block;
+    font-weight: 700;
+    padding-left: 10px;
+    font-family: 'Roboto';
+    font-size:20px;
+}
+.section-left-info::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.section-bottom{
+    height: 483px;
+     background: url(https://www.ksponco.or.kr/online/images/content/bg_teni_info_pc.jpg)
+    no-repeat center top; 
+}
+.section-bottom .tit-type02{
+    color: white;
+    padding-top: 5%;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+.section-bottom .con-txt{
+    padding: 2.5% 0 3%;
+    font-size: 22px;
+    color: white;
+}
+.section-bottom .btn-info{
+    position: relative;
+    border: 2px solid white;
+    font-size: 18px;
+    font-weight: 700;
+    width: 226px;
+    height: 70px;
+    display: block;
+    line-height: 70px;
+    color: white;
+    padding-left: 30px;
+}
+.section-bottom .btn-info::after{
+    content: '';
+    background:url(https://www.ksponco.or.kr/online/images/content/icon_arrow02.png)
+    no-repeat 0 0;
+    display: block;
+    width: 40px;
+    height: 14px;
+    position: absolute;
+    top : 23px;
+    right: 45px;
+}
+.page-top{
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    z-index: 999;
+    height: 33px;
+    color: white;
+    background-color: #3b3a40;
+    text-align: center;
+    line-height: 33px;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+#footer{
+    position: relative;
+
+}
+#footer .footer-top{
+    height: 80px;
+    background-color: #35373e;
+    padding: 20px o;
+
+}
+
+#footer .foot-menu{
+    float: left;
+    padding-top: 20px;
+}
+#footer .foot-menu>li{
+    position: relative;
+    float: left;
+    list-style-type: none;
+}
+#footer .foot-menu>li:first-childs>a{
+    padding-left: 0;
+    margin-top: -2px;
+    font-size: 18px;
+}
+#footer .foot-menu>li>a{
+    display: block;
+    padding: 0 20px;
+    color: white;
+    line-height: 1;
+}
+#footer .foot-menu .foot-ul-li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 1px;
+    height: 15px;
+    background-color: white
+}
+#footer .foot-menu{
+    content: '';
+    display: block;
+    clear: both;
+}
+.family-site{
+    display: flex;
+    float: right;
+    margin-top: 10px;
+}
+.family-site .con-site{
+    margin-top:10px;
+    position: relative;
+  
+
+}
+.family-site .con-site:first-child{
+    float: left;
+    margin-right: 10px;
+}
+.tit-site{
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding: 0 15px;
+    color: white;
+    line-height: 38px;
+    border: 1px solid white;
+}
+
+.bar{
+    background:url(https://www.ksponco.or.kr/online/images/common/icon_select_down.png)
+    no-repeat 0 0;
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    top : 14px;
+    right: 10px;
+}
+#input03{
+    display: none;
+}
+
+#input-menu{
+    display: none;
+    background-color: #4f5157;
+    position: absolute;
+    top :-290px;
+    width: 230px;
+    
+}
+#input03:checked+#input-menu{
+    display: block;
+}
+#input-menu .list-site>li{
+    display: block;
+    margin: 5px 0;
+}
+#input-menu .list-site>li>a{
+    display: block;
+    padding: 2px 20px;
+    font-size: 15px;
+    color: white;
+text-align: center;}
+#input-menu .list-site>li>a:hover{
+    background-color: #0089ff;}
+.bar01{
+    background:url(https://www.ksponco.or.kr/online/images/common/icon_select_down.png)
+    no-repeat 0 0;
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    top : 14px;
+    right: 10px;
+}
+#input04{
+    display: none;
+}
+#input-menu01{
+    display: none;
+    background-color: #4f5157;
+    position: absolute;
+    top :-350px;
+    width: 230px;   
+}
+#input-menu01 .list-site01>li{
+    display: block;
+    margin: 5px 0;
+}
+#input04:checked+#input-menu01{
+    display: block;
+}
+#input-menu01 .list-site01>li{
+    display: block;
+    margin: 5px 0;
+}
+#input-menu01 .list-site01>li>a{
+    display: block;
+    padding: 2px 20px;
+    font-size: 15px;
+    color: white;
+    text-align: center;}
+#input-menu01 .list-site01>li>a:hover{
+    background-color: #0089ff;}
+#footer .footer-bottom{
+    padding: 43px 0 90px;
+  
+}
+#footer .logo{
+    float: left;
+}
+.mark-area{
+    position: absolute;
+    top:0;
+    right: 0;
+ 
+}
+.mark-area-logo{
+    float: left;
+ 
+}
+/* .mark-area-logo01{
+   
+} */
+.logo-text{
+  
+    display: inline-block;
+    margin-left:0 ;
+    line-height: 55px;
+}
+.logo-text01{
+    margin-top: 10px ;
+    display: inline-block;
+    color: #45464b;
+    font-size: 15px;
+}
+.adress-info{
+    display: inline-block;
+    padding: 6px 0 0 20px;}
+.company{font-size: 15px;
+        line-height: 1;}
+address{
+    font-size: 15px;
+    padding: 8px 0 15px;
+}
+.copyright{
+    font-size: 15px;
+    line-height: 1;
+}
